@@ -8,16 +8,17 @@ driver = webdriver.Chrome()
 #Open website
 driver.get("https://in.mathworks.com/")
 
-#Wait for page to load
+#Wait time
 time.sleep(3)
 
-#Find button and click
+#locate and click button
 button = driver.find_element(By.LINK_TEXT, "Explore MATLAB")
 button.click()
 
-#Wait to see result
+#Wait time
 time.sleep(5)
 
 #Close browser
 driver.quit()
+
 
